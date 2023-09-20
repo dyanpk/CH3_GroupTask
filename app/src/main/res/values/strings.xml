@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Hackathon3_GroupA</string>
+    <string name="description_image">image</string>
+    <string name="text_stay_home">Stay Home</string>
+    <string name="text_we_deliver">we Deliver</string>
+    <string name="text_any_where">Any Where.. Any time!!</string>
+    <string name="text_jalan">Jalan Depok Timur</string>
+    <string name="text_delivered">Delivered To</string>
 
 </resources>
