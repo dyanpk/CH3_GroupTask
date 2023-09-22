@@ -89,7 +89,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_item3" />
 
     <ImageView
-        android:id="@+id/plus"
+        android:id="@+id/btnPlus"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginTop="112dp"
@@ -163,6 +163,7 @@
 
 
     <TextView
+        android:id="@+id/tvItemPrice"
         android:layout_width="90dp"
         android:layout_height="30dp"
         android:layout_marginTop="308dp"
@@ -176,6 +177,7 @@
         app:layout_constraintTop_toBottomOf="@id/banana" />
 
     <TextView
+        android:id="@+id/tvQuantity"
         android:layout_width="10dp"
         android:layout_height="30dp"
         android:layout_marginTop="308dp"

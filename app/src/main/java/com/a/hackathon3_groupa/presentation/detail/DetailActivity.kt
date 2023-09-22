@@ -4,7 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.a.hackathon3_groupa.databinding.ActivityMainBinding
+import com.a.hackathon3_groupa.databinding.ActivityDetailBinding
 import com.a.hackathon3_groupa.model.ProductResponse
 
 class DetailActivity : AppCompatActivity() {
@@ -22,8 +22,8 @@ class DetailActivity : AppCompatActivity() {
             )
         }
     }
-    private val binding : ActivityMainBinding by lazy {
-        ActivityMainBinding.inflate(layoutInflater)
+    private val binding : ActivityDetailBinding by lazy {
+        ActivityDetailBinding.inflate(layoutInflater)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,11 +34,6 @@ class DetailActivity : AppCompatActivity() {
         binding.btnPlus.setOnClickListener {
             increaseQuantity()
         }
-
-        binding.btnMinus.setOnClickListener {
-            decreaseQuantity()
-        }
-
 
     }
     private fun increaseQuantity() {
@@ -60,7 +55,7 @@ class DetailActivity : AppCompatActivity() {
         binding.tvQuantity.text = quantity.toString()
         binding.tvItemPrice.text = "IDR $totalPrice"
     }
-    private var quantity = 1
-    private val productPrice = 18000
+    private var quantity = 1 // Jumlah awal produk
+    private val productPrice = 18000 // Harga produk
 
 }
