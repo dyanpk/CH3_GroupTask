@@ -35,6 +35,9 @@ class DetailActivity : AppCompatActivity() {
             increaseQuantity()
         }
 
+        binding.btnMinus.setOnClickListener {
+            decreaseQuantity()
+        }
     }
     private fun increaseQuantity() {
         if (quantity < 10) { // Batasan jumlah maksimal (misalnya, 10)
